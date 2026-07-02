@@ -1,0 +1,6 @@
+{
+  "name": "Mensajería Cifrada P2P",
+  "description": "Aplicación de mensajería cifrada de extremo a extremo sin base de datos, con transferencia P2P, fotos, videos y mensajes de voz.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
