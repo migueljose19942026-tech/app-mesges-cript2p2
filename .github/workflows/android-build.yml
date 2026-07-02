@@ -12,9 +12,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-      - name: Install dependencies
-        run: npm install
+          node-version: '20'
+      - name: Install dependencies and Rebuild Binaries
+        run: |
+          rm -rf node_modules
+          rm -f package-lock.json
+          npm install
+          npm rebuild
       - name: Build Web
         run: npm run build
       - name: Sync Capacitor
